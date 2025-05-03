@@ -83,11 +83,15 @@ body {
 }
 
 .carrossel .setas {
-	width: 110%;
+	width: 100vw; 
 	position: absolute;
-	left: -24px;
+	top: 50%; 
+	left: -32px;
 	display: flex;
 	justify-content: space-between;
+	padding: 0 20px;
+	transform: translateY(-50%);
+	pointer-events: none;
 }
 
 .setas .seta {
@@ -97,6 +101,7 @@ body {
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
+	pointer-events: auto;
 }
 .setas .seta.opaca {
 	opacity: 0.4;
