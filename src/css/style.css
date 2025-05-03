@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+	min-height: 100dvh;
+	font-family: "Roboto", sans-serif;
+	background: #c5dde8;
+	background: linear-gradient(
+		90deg,
+		rgba(197, 221, 232, 0.35) 0%,
+		rgba(200, 247, 216, 0.4) 50%,
+		rgba(215, 199, 242, 0.4) 100%
+	);
+}
+
+.projeto {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0 20px;
+	background: #ffffff;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.projeto .header {
+	width: 100%;
+	text-align: center;
+	padding: 0 10px;
+	margin-bottom: 40px;
+}
+
+.header .title {
+	margin-bottom: 15px;
+	font-size: 3rem;
+}
+
+.header .subtitle {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.projeto .principal {
+	width: 100%;
+	font-size: 1.6rem;
+}
+
+.principal .descricao {
+	margin-bottom: 50px;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.principal .idades {
+	padding: 30px 25px 10px;
+	background: #deb1fc;
+	background: linear-gradient(
+		90deg,
+		rgba(222, 177, 252, 0.292) 0%,
+		rgba(255, 184, 184, 0.325) 50%,
+		rgba(250, 222, 182, 0.176) 100%
+	);
+}
+
+.idades .idade {
+	margin-bottom: 20px;
+	padding: 20px 0 40px;
+	border-bottom: 1px solid #cccccc5f;
+}
+
+.idades .idade:last-child {
+	border: none;
+}
+
+.idade .carrossel {
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.carrossel .setas {
+	width: 110%;
+	position: absolute;
+	left: -24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.setas .seta {
+	display: block;
+	width: 40px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+.setas .seta.opaca {
+	opacity: 0.4;
+	cursor: default;
+	pointer-events: none;
+}
+
+.setas .seta:last-child {
+	transform: rotate(180deg);
+}
+
+.carrossel .imagens {
+	width: 85%;
+}
+
+.carrossel .imagens img {
+	height: auto;
+	display: none;
+	width: 100%;
+	margin: 30px 0 40px;
+	object-fit: cover;
+}
+.carrossel .imagens img.show {
+	display: block;
+}
+
+.robo {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.robo .nome {
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+}
+
+.robo .arm {
+	margin: 35px 0 50px;
+	max-width: 80%;
+}
+
+.robo .teste-titulo {
+	margin-bottom: 30px;
+	font-size: 2rem;
+}
+
+.robo .video-teste {
+	max-width: 90%;
+}
+
+.projeto .informacoes {
+	padding: 30px 25px;
+	background-color: rgba(255, 255, 255, 0.55);
+}
+
+.informacoes .title {
+	margin-bottom: 40px;
+	font-size: 2.5rem;
+}
+
+.informacoes .informacao {
+	margin-bottom: 25px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #cccccc5f;
+	text-align: justify;
+}
+
+.informacoes .informacao:last-child {
+	border: none;
+	padding-bottom: 0;
+}
+
+.informacao h2 {
+	margin-bottom: 15px;
+	font-size: 2rem;
+}
+
+.informacao p {
+	font-size: 1.6rem;
+}
+
+.informacao p strong {
+	line-height: 2;
+}
