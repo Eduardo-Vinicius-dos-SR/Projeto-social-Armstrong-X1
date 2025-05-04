@@ -86,13 +86,12 @@ body {
 }
 
 .carrossel .setas {
-	width: 100vw; 
+	width: 105%;
 	position: absolute;
-	top: 50%; 
-	left: -32px;
+	top: 50%;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding: 0;
 	transform: translateY(-50%);
 	pointer-events: none;
 }
